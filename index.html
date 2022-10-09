@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#" id="back">back</a>
+        <div class="welcome">❤️WELCOME TO MY GHOST SHOES❤️</div>
+        <div class="cta">
+            <model-viewer src="assets/scene.gltf" camera-controls camera-orbit ="45deg" disable-zoom auto-rotate shadow-intensity ="1"></model-viewer>
+        </div>
+
+        <div class="new-box" id="newBox">
+            <div class="product-box" id="productBox1">
+                <img src="assets/nike1.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+            <div class="product-box" id="productBox2">
+                <img src="assets/nike2.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+            <div class="product-box" id="productBox3">
+                <img src="assets/nike3.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+            <div class="product-box" id="productBox4">
+                <img src="assets/nike4.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+            <div class="product-box" id="productBox5">
+                <img src="assets/nike5.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+            <div class="product-box" id="productBox6">
+                <img src="assets/nike6.png" alt="">
+                <div class="title-box">TESTING BOX 1</div>
+                <div class="desc-box">DESC BOX 1</div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="wrapper">
+            <div class="card">
+                <div class="product" id="product1" onclick="getDetail(1)">
+                    <img src="assets/nike1.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike Sport 6</div>
+                    <div class="description">For sports</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product2" onclick="getDetail(2)">
+                    <img src="assets/nike2.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike Black and Red</div>
+                    <div class="description">It's cool and comfort</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product3" onclick="getDetail(3)">
+                    <img src="assets/nike3.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike Lightblue</div>
+                    <div class="description">You'll love the color</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product4" onclick="getDetail(4)">
+                    <img src="assets/nike4.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike Limegreen</div>
+                    <div class="description">Best Shoes</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product5" onclick="getDetail(5)">
+                    <img src="assets/nike5.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike Air Jordan</div>
+                    <div class="description">Wanna be like Jordan?</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product6" onclick="getDetail(6)">
+                    <img src="assets/nike6.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="title">Nike running</div>
+                    <div class="description">Run faster with this one</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span></span>
+    <div class="top-item">
+            <div class="top-item-wrapper">
+                <div class="top-item-row">
+                    <img src="assets/nike5.png" alt="">
+                    <div class="top-item-detail">
+                        <h3>Nike Air Jordan</h3>
+                        <p>Wanna be like Jordan? Just buy the shoe and you can feel it!!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="tweak.js"></script>
+</body>
+</html>
