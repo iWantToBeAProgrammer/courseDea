@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <a href="#" id="back">back</a>
+    <div class="container" id="header">
+        
+        <div class="nav-bar" id="navBar">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#topItem">Top Item</a>
+                    </li>
+                    <li>
+                        <a href="https://iwanttobeaprogrammer.github.io/Portfolio-tailwind/" target="_blank">My Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="#" id="back" onclick="goBack()">back</a>
+        </div>
         <div class="welcome">❤️WELCOME TO MY GHOST SHOES❤️</div>
         <div class="cta">
             <model-viewer src="assets/scene.gltf" camera-controls camera-orbit ="45deg" disable-zoom auto-rotate shadow-intensity ="1"></model-viewer>
@@ -104,9 +123,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <span></span>
-    <div class="top-item">
+        <div class="top-item" id="topItem">
             <div class="top-item-wrapper">
                 <div class="top-item-row">
                     <img src="assets/nike5.png" alt="">
@@ -117,6 +134,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <script type="module"
         src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="tweak.js"></script>
